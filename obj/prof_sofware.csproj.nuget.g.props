@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/cem/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/cem/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/3rdpartylicenses.txt" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/3rdpartylicenses.txt')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/3rdpartylicenses.txt</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/MaterialIcons-Regular.012cf6a10129e2275d79.woff" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/MaterialIcons-Regular.012cf6a10129e2275d79.woff')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/MaterialIcons-Regular.012cf6a10129e2275d79.woff</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/MaterialIcons-Regular.570eb83859dc23dd0eec.woff2" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/MaterialIcons-Regular.570eb83859dc23dd0eec.woff2')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/MaterialIcons-Regular.570eb83859dc23dd0eec.woff2</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/MaterialIcons-Regular.a37b0c01c0baf1888ca8.ttf" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/MaterialIcons-Regular.a37b0c01c0baf1888ca8.ttf')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/MaterialIcons-Regular.a37b0c01c0baf1888ca8.ttf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/MaterialIcons-Regular.e79bfd88537def476913.eot" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/MaterialIcons-Regular.e79bfd88537def476913.eot')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/MaterialIcons-Regular.e79bfd88537def476913.eot</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/favicon.ico" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/favicon.ico')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/favicon.ico</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/index.html" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/index.html')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/index.html</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/inline.764ea7e8f233c3a6809b.bundle.js" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/inline.764ea7e8f233c3a6809b.bundle.js')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/inline.764ea7e8f233c3a6809b.bundle.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/main.d0329d265059e3e55cc6.bundle.js" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/main.d0329d265059e3e55cc6.bundle.js')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/main.d0329d265059e3e55cc6.bundle.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/polyfills.0963b44a58b5526cfab7.bundle.js" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/polyfills.0963b44a58b5526cfab7.bundle.js')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/polyfills.0963b44a58b5526cfab7.bundle.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/styles.20f9545db506af88f79c.bundle.css" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/styles.20f9545db506af88f79c.bundle.css')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/styles.20f9545db506af88f79c.bundle.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/vendor.fa09c1316e94520ecd3d.bundle.js" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.diagrams/0.4.2/contentFiles/any/netstandard1.6/wwwroot/db-diagrams/vendor.fa09c1316e94520ecd3d.bundle.js')">
+      <NuGetPackageId>EntityFrameworkCore.Diagrams</NuGetPackageId>
+      <NuGetPackageVersion>0.4.2</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>wwwroot/db-diagrams/vendor.fa09c1316e94520ecd3d.bundle.js</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design/3.1.1/build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design/3.1.1/build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/home/cem/.nuget/packages/newtonsoft.json/10.0.3</PkgNewtonsoft_Json>
+  </PropertyGroup>
+</Project>
