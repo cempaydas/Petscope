@@ -11,8 +11,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Swashbuckle.AspNetCore.Swagger;
 using prof_sofware.Models;
 using prof_sofware.Services;
+
 
 namespace prof_sofware
 {
@@ -31,6 +33,16 @@ namespace prof_sofware
             services.AddDbContext<ApplicationDbContext>(options=>options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
             services.AddScoped<IUserService,UserService>();
+            
+            services.AddSwaggerGen(c=>
+            {
+                c.SwaggerDoc("v1",new Microsoft.OpenApi.Models.OpenApiInfo{
+                    Title="This is Petscope Apı Doc",
+                    Version="v1"
+                });
+            });
+            
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,10 +61,19 @@ namespace prof_sofware
 
             app.UseAuthorization();
 
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            app.UseSwagger();
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c=>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json","Petscope API Doc");
+            });
+            
 
             
             

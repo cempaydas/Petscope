@@ -86,3 +86,8 @@
 /home/cem/projects/PetScope/Petscope/obj/Debug/netcoreapp3.1/prof_sofware.pdb
 /home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/prof_sofware.dll.config
 /home/cem/projects/PetScope/Petscope/obj/Debug/netcoreapp3.1/prof_sofware.dll.config
+/home/cem/projects/PetScope/Petscope/obj/Debug/netcoreapp3.1/prof_sofware.MvcApplicationPartsAssemblyInfo.cs
+/home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+/home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
