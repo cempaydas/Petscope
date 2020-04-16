@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using prof_sofware.Models;
 
@@ -25,9 +26,17 @@ namespace prof_sofware.Services
             throw new System.NotImplementedException();
         }
 
+        public User GetUser(int id)
+        {
+
+           var user=_context.Users.FirstOrDefault(x=>x.Id == id);
+            return user;
+        }
+
         public List<User> GetUsers()
         {
-            throw new System.NotImplementedException();
+          var user=_context.Users.ToList();
+         return user;
         }
 
         public User UpdateUser(int id, User user)

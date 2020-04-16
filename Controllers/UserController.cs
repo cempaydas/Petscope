@@ -28,6 +28,28 @@ namespace prof_sofware.Controllers
             return Ok(user);
 
         }
+        [HttpGet("{id}")]
+
+        public   IActionResult GetUser(int id){
+          
+            var user=_userService.GetUser(id);
+
+
+            return Ok(user);
+
+        }
+         [HttpGet]
+
+        public   IActionResult AllUser(){
+          
+            var user=_userService.GetUsers();
+
+
+            return Ok(user);
+
+        }
+
+
         
     }
 }

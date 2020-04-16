@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/cem/projects/prof_sofware/prof_sofware.csproj": {}
+    "/home/cem/projects/PetScope/Petscope/prof_sofware.csproj": {}
   },
   "projects": {
-    "/home/cem/projects/prof_sofware/prof_sofware.csproj": {
+    "/home/cem/projects/PetScope/Petscope/prof_sofware.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cem/projects/prof_sofware/prof_sofware.csproj",
+        "projectUniqueName": "/home/cem/projects/PetScope/Petscope/prof_sofware.csproj",
         "projectName": "prof_sofware",
-        "projectPath": "/home/cem/projects/prof_sofware/prof_sofware.csproj",
+        "projectPath": "/home/cem/projects/PetScope/Petscope/prof_sofware.csproj",
         "packagesPath": "/home/cem/.nuget/packages/",
-        "outputPath": "/home/cem/projects/prof_sofware/obj/",
+        "outputPath": "/home/cem/projects/PetScope/Petscope/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/cem/.nuget/NuGet/NuGet.Config"

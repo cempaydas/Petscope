@@ -7,5 +7,6 @@ namespace prof_sofware.Models
         public int Id { get; set; }
          [Required]
         public string Value { get; set; }
+         
     }
 }

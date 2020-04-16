@@ -11,5 +11,7 @@ namespace prof_sofware.Services
          public User UpdateUser(int id,User user);
          public string DoInActive(int id);
 
+          public User GetUser(int id);
+
     }
 }
