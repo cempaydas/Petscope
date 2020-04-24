@@ -30,19 +30,41 @@ namespace prof_sofware
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options=>options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
-            services.AddScoped<IUserService,UserService>();
-            
-            services.AddSwaggerGen(c=>
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserTypeService, UserTypeService>();
+            services.AddScoped<IGenusService, GenusService>();
+            services.AddScoped<ISpeciesService, SpeciesService>();
+            services.AddScoped<IStatusService, StatusService>();
+            services.AddScoped<IHospitalService, HospitalService>();
+            services.AddScoped<IPetService, PetService>();
+            services.AddScoped<IEmergencyService, EmergencyService>();
+            services.AddScoped<IPetService, PetService>();
+            services.AddScoped<IPostService, PostService>();
+           
+
+
+            services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1",new Microsoft.OpenApi.Models.OpenApiInfo{
-                    Title="This is Petscope Apı Doc",
-                    Version="v1"
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "This is Petscope Apı Doc",
+                    Version = "v1",
+                    Contact = new Microsoft.OpenApi.Models.OpenApiContact
+                    {
+                        Email = "cem.paydas@gmail.com",
+
+
+                    }
+
                 });
             });
-            
-            
+
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,12 +73,12 @@ namespace prof_sofware
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                
+
 
             }
 
             app.UseHttpsRedirection();
-            
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -69,14 +91,14 @@ namespace prof_sofware
             app.UseSwagger();
             app.UseSwagger();
 
-            app.UseSwaggerUI(c=>
+            app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json","Petscope API Doc");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Petscope API Doc");
             });
-            
 
-            
-            
+
+
+
         }
     }
 }

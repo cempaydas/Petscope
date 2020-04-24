@@ -10,15 +10,15 @@ namespace prof_sofware.Services
         private ApplicationDbContext _context;
         public UserService(ApplicationDbContext context)
         {
-            this._context=context;
-            
+            this._context = context;
+
         }
 
         public User AddUserAsync(User user)
         {
             _context.Users.Add(user);
             _context.SaveChanges();
-           return user;
+            return user;
         }
 
         public string DoInActive(int id)
@@ -29,14 +29,14 @@ namespace prof_sofware.Services
         public User GetUser(int id)
         {
 
-           var user=_context.Users.FirstOrDefault(x=>x.Id == id);
+            var user = _context.Users.FirstOrDefault(x => x.Id == id);
             return user;
         }
 
         public List<User> GetUsers()
         {
-          var user=_context.Users.ToList();
-         return user;
+            var user = _context.Users.ToList();
+            return user;
         }
 
         public User UpdateUser(int id, User user)
