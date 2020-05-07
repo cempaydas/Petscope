@@ -10,8 +10,8 @@ using prof_sofware.Models;
 namespace prof_sofware.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200327075456_Quickfix")]
-    partial class Quickfix
+    [Migration("20200507202749_friend added")]
+    partial class friendadded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -79,6 +79,24 @@ namespace prof_sofware.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Emergencies");
+                });
+
+            modelBuilder.Entity("prof_sofware.Models.Friend", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<int>("FriendPet")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("PetId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Friends");
                 });
 
             modelBuilder.Entity("prof_sofware.Models.Genus", b =>

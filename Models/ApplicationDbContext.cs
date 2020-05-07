@@ -18,7 +18,7 @@ namespace prof_sofware.Models
         public DbSet<Post> Posts { get; set; }
         public DbSet<Species> Species { get; set; }
         public DbSet<Status> Statuses { get; set; }
-        
+        public DbSet<Friend> Friends { get; set; }
         
     }
 }

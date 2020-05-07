@@ -43,6 +43,7 @@ namespace prof_sofware
             services.AddScoped<IEmergencyService, EmergencyService>();
             services.AddScoped<IPetService, PetService>();
             services.AddScoped<IPostService, PostService>();
+             services.AddScoped<IFrienService,FriendService>();
            
 
 

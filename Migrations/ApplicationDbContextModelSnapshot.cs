@@ -79,6 +79,24 @@ namespace prof_sofware.Migrations
                     b.ToTable("Emergencies");
                 });
 
+            modelBuilder.Entity("prof_sofware.Models.Friend", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<int>("FriendPet")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("PetId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Friends");
+                });
+
             modelBuilder.Entity("prof_sofware.Models.Genus", b =>
                 {
                     b.Property<int>("Id")

@@ -71,9 +71,6 @@
 /home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Npgsql.dll
 /home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
-/home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
-/home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
-/home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
 /home/cem/projects/PetScope/Petscope/obj/Debug/netcoreapp3.1/prof_sofware.csprojAssemblyReference.cache
 /home/cem/projects/PetScope/Petscope/obj/Debug/netcoreapp3.1/staticwebassets/prof_sofware.StaticWebAssets.Manifest.cache
 /home/cem/projects/PetScope/Petscope/obj/Debug/netcoreapp3.1/staticwebassets/prof_sofware.StaticWebAssets.xml
@@ -91,3 +88,5 @@
 /home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
 /home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/cem/projects/PetScope/Petscope/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/cem/projects/PetScope/Petscope/obj/Debug/netcoreapp3.1/prof_sofware.csproj.CoreCompileInputs.cache
+/home/cem/projects/PetScope/Petscope/obj/Debug/netcoreapp3.1/prof_sofware.genruntimeconfig.cache
