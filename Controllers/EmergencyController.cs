@@ -4,7 +4,7 @@ using prof_sofware.Services;
 
 namespace prof_sofware.Controllers
 {
-      [ApiController]
+    [ApiController]
     [Route("api/[controller]")]
     public class EmergencyController:ControllerBase
     {
@@ -17,6 +17,9 @@ namespace prof_sofware.Controllers
         [HttpPost]
         public IActionResult AddHospital(Emergency emergency)
         {
+            if(emergency==null){
+                return BadRequest();
+            }
             var re = _IEmergencyService.AddEmergency(emergency);
             return Ok(re);
         }
@@ -25,6 +28,9 @@ namespace prof_sofware.Controllers
         public IActionResult GetEmergencies()
         {
             var re=_IEmergencyService.GetEmergencies();
+            if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }
@@ -32,6 +38,9 @@ namespace prof_sofware.Controllers
         public IActionResult GetEmergency(int id)
         {
             var re=_IEmergencyService.GetEmergency(id);
+             if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }

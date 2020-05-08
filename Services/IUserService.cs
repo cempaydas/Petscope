@@ -12,6 +12,6 @@ namespace prof_sofware.Services
          public string DoInActive(int id);
 
           public User GetUser(int id);
-
+          public User Login(string userName, string password);
     }
 }

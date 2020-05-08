@@ -17,6 +17,9 @@ namespace prof_sofware.Controllers
         [HttpPost]
         public IActionResult AddHospital(Pet pet)
         {
+             if(pet==null){
+                return BadRequest();
+            }
             var re = _IPetService.AddPet(pet);
             return Ok(re);
         }
@@ -25,6 +28,9 @@ namespace prof_sofware.Controllers
         public IActionResult GetPets()
         {
             var re=_IPetService.GetPets();
+             if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }
@@ -32,6 +38,9 @@ namespace prof_sofware.Controllers
         public IActionResult GetPet(int id)
         {
             var re=_IPetService.GetPet(id);
+             if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }

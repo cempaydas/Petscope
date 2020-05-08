@@ -18,6 +18,9 @@ namespace prof_sofware.Controllers
          [HttpPost]
         public IActionResult AddPost(Post post)
         {
+             if(post==null){
+                return BadRequest();
+            }
             var re = _IPostService.AddPost(post);
             return Ok(re);
         }
@@ -26,6 +29,9 @@ namespace prof_sofware.Controllers
         public IActionResult GetPost(int id)
         {
             var re=_IPostService.GetPost(id);
+             if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }

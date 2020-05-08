@@ -18,13 +18,20 @@ namespace prof_sofware.Controllers
          [HttpPost]
         public IActionResult AddGenus(Genus genus)
         {
+             if(genus==null){
+                return BadRequest();
+            }
             var re = _IGenusService.AddGenus(genus);
+           
             return Ok(re);
         }
         [HttpGet]
         public IActionResult GetGenus()
         {
             var re=_IGenusService.GetGenus();
+            if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }
@@ -32,6 +39,9 @@ namespace prof_sofware.Controllers
         public IActionResult GetGenus(int id)
         {
             var re=_IGenusService.GetGenus(id);
+            if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }

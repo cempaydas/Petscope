@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using prof_sofware.Models;
 
 namespace prof_sofware.Services
@@ -37,6 +39,26 @@ namespace prof_sofware.Services
         {
             var user = _context.Users.ToList();
             return user;
+        }
+
+        public User Login(string userName, string password)
+        {
+            var user = _context.Users.FirstOrDefault(x => x.UserName == userName);
+            if (user == null)
+                return null;
+            string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+           password: password,
+           salt: user.Salt,
+           prf: KeyDerivationPrf.HMACSHA1,
+           iterationCount: 10000,
+           numBytesRequested: 256 / 8));
+            var user_ = _context.Users.FirstOrDefault(x => x.UserName == userName && x.Password == hashed);
+
+            if (user_ == null)
+                return null;
+
+            return user_;
+
         }
 
         public User UpdateUser(int id, User user)

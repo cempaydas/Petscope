@@ -18,6 +18,9 @@ namespace prof_sofware.Controllers
         [HttpPost]
         public IActionResult AddStatus(Status status)
         {
+             if(status==null){
+                return BadRequest();
+            }
             var re = _IStatusService.AddStatus(status);
             return Ok(re);
         }
@@ -25,6 +28,9 @@ namespace prof_sofware.Controllers
         public IActionResult GetStatuses()
         {
             var statuses=_IStatusService.GetStatuses();
+             if(statuses==null){
+                return NotFound();
+            }
             return Ok(statuses);
 
         }
@@ -32,6 +38,9 @@ namespace prof_sofware.Controllers
         public IActionResult GetStatus(int id)
         {
             var statuses=_IStatusService.GetStatus(id);
+             if(statuses==null){
+                return NotFound();
+            }
             return Ok(statuses);
 
         }

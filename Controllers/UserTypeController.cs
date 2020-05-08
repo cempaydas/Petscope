@@ -21,6 +21,10 @@ namespace prof_sofware.Controllers
         public IActionResult AddUserType(UserType userType)
         {
 
+            if (userType == null)
+            {
+                return BadRequest();
+            }
             var inserted = _userTypeService.AddUserType(userType);
 
 
@@ -34,18 +38,24 @@ namespace prof_sofware.Controllers
 
             var userType = _userTypeService.GetUserType(id);
 
-
+            if (userType == null)
+            {
+                return NotFound();
+            }
 
             return Ok(userType);
 
         }
 
-         [HttpGet]
+        [HttpGet]
         public IActionResult GetUserTypes()
         {
 
             var userTypes = _userTypeService.GetUserTypes();
-
+            if (userTypes == null)
+            {
+                return NotFound();
+            }
 
 
             return Ok(userTypes);

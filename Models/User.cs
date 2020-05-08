@@ -17,6 +17,8 @@ namespace prof_sofware.Models
         public string Phone { get; set; }
          [Required]
         public string Email {get;set;}
+
+        public byte[]  Salt { get; set; }
         
         public UserType UserType { get; set; }
     }

@@ -17,6 +17,10 @@ namespace prof_sofware.Controllers
          [HttpPost]
         public IActionResult AddFollowing(Friend friend)
         {
+            if(friend==null)
+            {
+                return BadRequest();
+            }
             var re = _IFrienService.AddFriend(friend);
             return Ok(re);
         }
@@ -25,6 +29,9 @@ namespace prof_sofware.Controllers
         public IActionResult FollowerList(int id)
         {
             var re=_IFrienService.GetFollower(id);
+            if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }
@@ -33,6 +40,9 @@ namespace prof_sofware.Controllers
         public IActionResult FollowingList(int id)
         {
             var re=_IFrienService.GetFollowing(id);
+            if(re==null){
+                return NotFound();
+            }
             return Ok(re);
 
         }
